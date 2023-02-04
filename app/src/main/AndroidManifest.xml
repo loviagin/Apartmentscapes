@@ -14,9 +14,9 @@
         android:theme="@style/Theme.Apartmentscapes"
         tools:targetApi="31">
         <activity
-            android:name=".LivingroomActivity"
+            android:name=".activities.LivingroomActivity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activities.HomeActivity"
             android:exported="false"
@@ -35,6 +35,11 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/game_services_project_id" />
+
     </application>
 
 </manifest>
