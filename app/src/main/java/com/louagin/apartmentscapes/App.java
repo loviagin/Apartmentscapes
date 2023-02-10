@@ -34,6 +34,7 @@ public class App extends Application {
         } else {
             money = preferences.getInt("money", 0);
         }
+//        is_new = true;
         Log.d(TAG, "is_new - " + is_new);
 
 //        PlayGamesSdk.initialize(this);

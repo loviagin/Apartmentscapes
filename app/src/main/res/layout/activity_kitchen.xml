@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutMode="opticalBounds"
-    tools:context=".activities.LivingroomActivity">
+    tools:context=".activities.WorkroomActivity">
 
     <ImageView
-        android:id="@+id/ivLivingroomMain"
+        android:id="@+id/ivWorkrroomMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
@@ -17,16 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/livingroom" />
-
-    <include
-        layout="@layout/livingroom_bought"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/kitchen" />
 
     <include
         layout="@layout/inner_item"
@@ -36,6 +27,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lock" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

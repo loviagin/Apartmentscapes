@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Apartment scapes</string>
-    <string translatable="false"  name="game_services_project_id">200644378307</string>
-    <string translatable="false"  name="google_client_id">200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com</string>
+    <string name="game_services_project_id" translatable="false">200644378307</string>
+    <string name="google_client_id" translatable="false">200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com</string>
+    <string name="money_str">%s €</string>
+    <string name="any_text_str">%s</string>
 </resources>

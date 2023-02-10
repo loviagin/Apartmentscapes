@@ -1,12 +1,16 @@
 package com.louagin.apartmentscapes.activities;
 
+import static com.louagin.apartmentscapes.auth.Credential.database;
+import static com.louagin.apartmentscapes.auth.Credential.dbHelper;
 import static com.louagin.apartmentscapes.auth.Credential.is_new;
 import static com.louagin.apartmentscapes.auth.Credential.rooms;
+import static com.louagin.apartmentscapes.auth.Credential.values;
 import static com.louagin.apartmentscapes.services.DBHelper.ID_ROOM;
 import static com.louagin.apartmentscapes.services.DBHelper.IS_OPEN;
 import static com.louagin.apartmentscapes.services.DBHelper.TABLE_NAME;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,18 +21,23 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.louagin.apartmentscapes.R;
+import com.louagin.apartmentscapes.auth.Credential;
 import com.louagin.apartmentscapes.services.DBHelper;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "Main_Activity";
-    public static DBHelper dbHelper;
+
 //    private static final int RC_SIGN_IN = 543;
 //    private GoogleSignInClient mGoogleSignInClient;
 //    private GamesSignInClient gamesSignInClient;
 //
 //    private Intent signInIntent;
 //    private String playerId;
+
+    public MainActivity() {
+
+    }
 
     @Override
     protected void onStart() {
@@ -43,25 +52,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dbHelper = new DBHelper(this);
-
-        SQLiteDatabase database = dbHelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-
-        if (is_new) {
 //      Вставка данных
-            for (int f = 1; f <= 7; f++){
-                values.put(ID_ROOM, f);
-                if (f == 1){
-                    values.put(IS_OPEN, 1);
-                } else {
-                    values.put(IS_OPEN, 0);
-                }
-                database.insert(DBHelper.TABLE_NAME, null, values);
-            }
-//        database.delete(TABLE_NAME, "_id=1", null);
-//        database.delete(TABLE_NAME, "_id=2", null);
-        }
+        loadData(is_new, this);
+
 //        else {
 //            Cursor cursor = database.query(TABLE_NAME, null, null, null, null, null, null);
 //            if (cursor.moveToFirst()) {
@@ -75,9 +68,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //            cursor.close();
 //        }
-
         startActivity(new Intent(this, HomeActivity.class));
-
 //        GamesSignInClient gamesSignInClient = PlayGames.getGamesSignInClient(this);
 //
 //        gamesSignInClient.isAuthenticated().addOnCompleteListener(isAuthenticatedTask -> {
@@ -96,6 +87,24 @@ public class MainActivity extends AppCompatActivity {
 //                Log.d(TAG, playerId);
 //            }
 //        });
+    }
+
+    protected static void loadData(boolean isNew, Context context) {
+        dbHelper = new DBHelper(context);
+        database = dbHelper.getWritableDatabase();
+        values = new ContentValues();
+        if (isNew) {
+            database.delete(TABLE_NAME, null, null);
+            for (int f = 1; f <= 7; f++) {
+                values.put(ID_ROOM, f);
+                if (f == 1) {
+                    values.put(IS_OPEN, 1);
+                } else {
+                    values.put(IS_OPEN, 0);
+                }
+                database.insert(DBHelper.TABLE_NAME, null, values);
+            }
+        }
     }
 //        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN)
 //                .requestServerAuthCode(getString(R.string.default_web_client_id))

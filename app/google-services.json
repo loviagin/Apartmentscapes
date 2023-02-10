@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "200644378307-3h3eq43cf3fpjentviatjv0vtmut29tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.apartmentscapes",
+            "certificate_hash": "9af2f6862e2e7c1f34f770440c04ab0ce16860b4"
+          }
+        },
+        {
           "client_id": "200644378307-vcnrinrngd6nod62bonj8c4lqco7psua.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
