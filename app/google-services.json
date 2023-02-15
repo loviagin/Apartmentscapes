@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "200644378307",
+    "firebase_url": "https://workisland-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "workisland",
+    "storage_bucket": "workisland.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200644378307:android:ac3a8e85f1ee7f12c12c76",
+        "android_client_info": {
+          "package_name": "com.louagin.apartmentscapes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200644378307-3h3eq43cf3fpjentviatjv0vtmut29tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.apartmentscapes",
+            "certificate_hash": "9af2f6862e2e7c1f34f770440c04ab0ce16860b4"
+          }
+        },
+        {
+          "client_id": "200644378307-vcnrinrngd6nod62bonj8c4lqco7psua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.apartmentscapes",
+            "certificate_hash": "ba460ebd6ebe1f9f2d6376d2418a497a61569491"
+          }
+        },
+        {
+          "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA70uHYyeIovBLrqsiBicqsanHqeT_sZ2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200644378307:android:38caad5a71a7809ac12c76",
+        "android_client_info": {
+          "package_name": "com.louagin.rollic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200644378307-8mmm3jstoekc722g4tf9q08voguk6ib1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.rollic",
+            "certificate_hash": "ba460ebd6ebe1f9f2d6376d2418a497a61569491"
+          }
+        },
+        {
+          "client_id": "200644378307-qaf5lejf15ogtdgpsgphk2cqtv142f0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.rollic",
+            "certificate_hash": "befc96c9cb74127099963f6c2f3e572d643dc313"
+          }
+        },
+        {
+          "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA70uHYyeIovBLrqsiBicqsanHqeT_sZ2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200644378307:android:e5093845172cae43c12c76",
+        "android_client_info": {
+          "package_name": "com.louagin.thectg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200644378307-kt3f35qh2qqbi5kchg58eqm2c580hf8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.louagin.thectg",
+            "certificate_hash": "befc96c9cb74127099963f6c2f3e572d643dc313"
+          }
+        },
+        {
+          "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA70uHYyeIovBLrqsiBicqsanHqeT_sZ2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

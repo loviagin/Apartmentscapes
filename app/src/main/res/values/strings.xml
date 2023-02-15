@@ -2,7 +2,34 @@
     <string name="app_name">Apartment scapes</string>
     <string name="game_services_project_id" translatable="false">200644378307</string>
     <string name="google_client_id" translatable="false">200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com</string>
-    <string name="money_str">%s €</string>
-    <string name="any_text_str">%s</string>
-    <string name="time_str">Времени осталось:\n %s мин. %s сек.</string>
+    <string name="money_str" translatable="false">%s €</string>
+    <string name="any_text_str" translatable="false">%s</string>
+    <string name="time_str">Time left:\n %s min. %s sec.</string>
+    <string name="start_new_game_str">Start new game</string>
+    <string name="continue_text">Continue</string>
+    <string name="background_image_str">Background img</string>
+    <string name="block_icon_str">Block icon</string>
+    <string name="aircondition">Air condition</string>
+    <string name="cup">Cup</string>
+    <string name="rug">Rug</string>
+    <string name="teapot">Teapot</string>
+    <string name="vase">Vase</string>
+    <string name="object_img_str">Object img</string>
+    <string name="start_closeout_str">Start closeout</string>
+    <string name="prev_room_str">Prev room</string>
+    <string name="next_room_str">Next room</string>
+    <string name="Store_str">Store</string>
+    <string name="close_str">Close</string>
+    <string name="robot1">Robot 1</string>
+    <string name="robot2">Robot 2</string>
+    <string name="robot3">Robot 3</string>
+    <string name="bye_str">Bye</string>
+    <string name="on_home_menu">To home</string>
+    <string name="end_closeout_menu">End closeout</string>
+    <string name="win_str">🎉🎉You win🎉🎉</string>
+    <string name="win_description_str">You find all objects and earn %s€</string>
+    <string name="robot1_str">Vacuum cleaner 1</string>
+    <string name="robot2_str">Vacuum cleaner 2</string>
+    <string name="robot3_str">Vacuum cleaner 3</string>
+    <string name="no_money_str">You don\'t have enough funds</string>
 </resources>

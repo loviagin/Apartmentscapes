@@ -145,9 +145,9 @@ public class LivingroomActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         shopItems.clear();
-                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot), "Робот пылесос 1", "800"));
-                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot1), "Робот пылесос 2", "1000"));
-                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot2), "Робот пылесос 3", "1300"));
+                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot), getString(R.string.robot1_str), "800"));
+                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot1), getString(R.string.robot2_str), "1000"));
+                        shopItems.add(new ShopItem(getResources().getDrawable(R.drawable.robot2), getString(R.string.robot3_str), "1300"));
                         shopItemAction(position);
                         break;
                     case 1:
@@ -257,7 +257,7 @@ public class LivingroomActivity extends AppCompatActivity {
                             values.put(LR_ROBOT, 3);
                             isBought = true;
                         } else {
-                            Toast.makeText(LivingroomActivity.this, "Вам не хватает средств", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LivingroomActivity.this, getString(R.string.no_money_str), Toast.LENGTH_SHORT).show();
                             isBought = false;
                         }
                         break;

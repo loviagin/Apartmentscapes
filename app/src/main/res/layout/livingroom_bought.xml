@@ -13,7 +13,8 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/robot" />
+        app:srcCompat="@drawable/robot"
+        android:contentDescription="@string/robot1" />
 
     <ImageView
         android:id="@+id/ivLRrobot2"
@@ -24,7 +25,8 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/robot1" />
+        app:srcCompat="@drawable/robot1"
+        android:contentDescription="@string/robot2" />
 
     <ImageView
         android:id="@+id/ivLRrobot3"
@@ -35,6 +37,7 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/robot2" />
+        app:srcCompat="@drawable/robot2"
+        android:contentDescription="@string/robot3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

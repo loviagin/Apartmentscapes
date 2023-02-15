@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/livingroom" />
+        app:srcCompat="@drawable/livingroom"
+        android:contentDescription="@string/background_image_str" />
 
     <ImageView
         android:id="@+id/ivPlayLRaircondition"
@@ -26,7 +27,8 @@
         android:layout_marginStart="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/aircondition" />
+        app:srcCompat="@drawable/aircondition"
+        android:contentDescription="@string/aircondition" />
 
     <ImageView
         android:id="@+id/ivPlayLRcup"
@@ -36,7 +38,8 @@
         android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/cup" />
+        app:srcCompat="@drawable/cup"
+        android:contentDescription="@string/cup" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -55,7 +58,8 @@
         android:layout_marginBottom="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline"
-        app:srcCompat="@drawable/rug" />
+        app:srcCompat="@drawable/rug"
+        android:contentDescription="@string/rug" />
 
     <ImageView
         android:id="@+id/ivPlayLRteapot"
@@ -65,7 +69,8 @@
         android:layout_marginBottom="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/teapot" />
+        app:srcCompat="@drawable/teapot"
+        android:contentDescription="@string/teapot" />
 
     <ImageView
         android:id="@+id/ivPlayLRvase"
@@ -75,7 +80,8 @@
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vase" />
+        app:srcCompat="@drawable/vase"
+        android:contentDescription="@string/vase" />
 
 
     <include

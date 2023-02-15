@@ -71,11 +71,11 @@ public class LivingroomPlayActivity extends AppCompatActivity {
         textViewAddedMoney = findViewById(R.id.tvPlayAddedMoney);
 
         playItems = new ArrayList<>();
-        playItems.add(new PlayItem("Anya", "Ваза", getResources().getDrawable(R.drawable.vase), 200));
-        playItems.add(new PlayItem("Valya", "Кондиционер", getResources().getDrawable(R.drawable.aircondition), 700));
-        playItems.add(new PlayItem("Sasha", "Плед", getResources().getDrawable(R.drawable.rug), 100));
-        playItems.add(new PlayItem("Ivan", "Чайник", getResources().getDrawable(R.drawable.teapot), 120));
-        playItems.add(new PlayItem("Ilya", "Чашка", getResources().getDrawable(R.drawable.cup), 80));
+        playItems.add(new PlayItem("Anya", getString(R.string.vase), getResources().getDrawable(R.drawable.vase), 200));
+        playItems.add(new PlayItem("Valya", getString(R.string.aircondition), getResources().getDrawable(R.drawable.aircondition), 700));
+        playItems.add(new PlayItem("Sasha", getString(R.string.rug), getResources().getDrawable(R.drawable.rug), 100));
+        playItems.add(new PlayItem("Ivan", getString(R.string.teapot), getResources().getDrawable(R.drawable.teapot), 120));
+        playItems.add(new PlayItem("Ilya", getString(R.string.cup), getResources().getDrawable(R.drawable.cup), 80));
 
         listItems = new ArrayList<>();
         listItems.add(imageViewVase);
@@ -85,7 +85,7 @@ public class LivingroomPlayActivity extends AppCompatActivity {
         listItems.add(imageViewCup);
 
         Thread threadTimer = new Thread(() -> {
-            for (int time = 60; time >= 0; time--) {
+            for (int time = 300; time >= 0; time--) {
                 textViewTimer.setText(String.format(getResources().getString(R.string.time_str), "" + time / 60, "" + (time - (time / 60 * 60))));
                 try {
                     Object obj = new Object();
@@ -167,12 +167,12 @@ public class LivingroomPlayActivity extends AppCompatActivity {
 //            Toast.makeText(this, "🎉🎉Победа🎉🎉", Toast.LENGTH_SHORT).show();
             int profit = money - preferences.getInt("money", 0);
             new AlertDialog.Builder(this)
-                    .setTitle("\uD83C\uDF89\uD83C\uDF89Победа\uD83C\uDF89\uD83C\uDF89")
-                    .setMessage(String.format("Вы нашли все предметы и заработали %s€", profit))
+                    .setTitle(R.string.win_str)
+                    .setMessage(String.format(getString(R.string.win_description_str), "" + profit))
 
                     // Specifying a listener allows you to take an action before dismissing the dialog.
                     // The dialog is automatically dismissed when a dialog button is clicked.
-                    .setPositiveButton("Продолжить", (dialog, which) -> startActivity(new Intent(LivingroomPlayActivity.this, LivingroomActivity.class)))
+                    .setPositiveButton(getString(R.string.continue_text), (dialog, which) -> startActivity(new Intent(LivingroomPlayActivity.this, LivingroomActivity.class)))
 
                     // A null listener allows the button to dismiss the dialog and take no further action.
 //                    .setNegativeButton(android.R.string.no, null)

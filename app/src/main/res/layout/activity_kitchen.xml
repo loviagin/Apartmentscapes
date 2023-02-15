@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kitchen" />
+        app:srcCompat="@drawable/kitchen"
+        android:contentDescription="@string/background_image_str" />
 
     <include
         layout="@layout/inner_item"
@@ -37,7 +38,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lock" />
+        app:srcCompat="@drawable/lock"
+        android:contentDescription="@string/block_icon_str" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

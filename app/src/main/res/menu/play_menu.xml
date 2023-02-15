@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/item_exit"
-        android:title="Завершить распродажу" />
+        android:title="@string/end_closeout_menu" />
     <item
         android:id="@+id/item_home"
-        android:title="На главную" />
+        android:title="@string/on_home_menu" />
 </menu>

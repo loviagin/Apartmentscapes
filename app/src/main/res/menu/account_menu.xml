@@ -3,5 +3,5 @@
 
     <item
         android:id="@+id/m_home"
-        android:title="На главную" />
+        android:title="@string/on_home_menu" />
 </menu>
