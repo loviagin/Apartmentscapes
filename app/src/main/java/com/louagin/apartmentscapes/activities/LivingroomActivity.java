@@ -84,7 +84,6 @@ public class LivingroomActivity extends AppCompatActivity {
         Cursor cursor = database.query(TABLE_NAME, null, "id_room = 1", null, null, null, null);
         if (cursor.moveToFirst()) {
             int lr_robot = cursor.getColumnIndex(LR_ROBOT);
-            Log.e(TAG, cursor.getInt(lr_robot) + " ---");
             switch (cursor.getInt(lr_robot)) {
                 case 1:
                     imageViewRobot1.setVisibility(View.VISIBLE);
@@ -107,9 +106,7 @@ public class LivingroomActivity extends AppCompatActivity {
         buttonShop.setOnClickListener(v -> showShop());
         buttonCloseShop.setOnClickListener(view -> cardViewShop.setVisibility(View.GONE));
         buttonStartGame.setOnClickListener(view -> {
-            money += 1000;
-            preferences.edit().putInt("money", money).apply();
-            textViewMoney.setText(String.valueOf(money) + "€");
+            startActivity(new Intent(this, LivingroomPlayActivity.class));
         });
         buttonPrev.setOnClickListener(view -> {
             startActivity(new Intent(this, WorkroomActivity.class));

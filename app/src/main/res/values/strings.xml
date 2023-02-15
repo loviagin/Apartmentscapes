@@ -4,4 +4,5 @@
     <string name="google_client_id" translatable="false">200644378307-er8bq7bibb5636vkdmnskt47c75dbait.apps.googleusercontent.com</string>
     <string name="money_str">%s €</string>
     <string name="any_text_str">%s</string>
+    <string name="time_str">Времени осталось:\n %s мин. %s сек.</string>
 </resources>
